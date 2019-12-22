@@ -9,10 +9,12 @@ body{
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
 }
 
-header {
-	font-size: 300%;
+header img{
+	width: 100%;
+	height: 
+	/*font-size: 300%;
   	position: relative;
-  	text-align: center;
+  	text-align: center;*/
 }
 
 .pageTitle{
