@@ -1,0 +1,85 @@
+/*Custom CSS Style Sheet.  Somewhat Brutalist.  Written by John Mays, DEC 2019. */
+h3{
+	font-size: 180%;
+}
+
+body{
+	color: #ffffff;
+	background-color: #1A1A1A;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+}
+
+header {
+	font-size: 300%;
+  	position: relative;
+  	text-align: center;
+}
+
+.pageTitle{
+	position: absolute;
+  	top: 10%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 8px -8px #1A1A1A;
+}
+
+.topNav{
+	background-color: #2D2D2D;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 8px;
+	padding-right: 8px;
+	
+	float: none;
+  	position: absolute;
+  	left: 50%;
+  	transform: translate(-50%);
+	overflow: hidden;
+}
+
+.topNav a{
+	text-align: center;
+	background-color: #1A1A1A;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.aboutSection{
+	background-color: #2D2D2D;
+	float: left;
+	padding-right: 10px;
+	max-width: 50%;
+}
+
+.aboutSection h3{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.aboutSection p{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.aboutSection ul{
+  	list-style-type: none;
+  	padding: 0px;
+	margin: 10px;
+}
+
+.graphicDesignSection{
+	background-color: #2D2D2D;
+}
+
+.graphicDesignSection img{
+	float: left;
+	padding: 10px;
+}
+
+address{
+	text-align: center;
+	clear: left;
+}
+
