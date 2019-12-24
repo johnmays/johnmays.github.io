@@ -3,10 +3,16 @@ h3{
 	font-size: 120%;
 }
 
+
+html{
+	height: 100%;
+}
+
 body{
 	color: #ffffff;
 	background-color: #1A1A1A;
-	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	height: 100%;
 }
 
 header img{
@@ -15,9 +21,6 @@ header img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	/*font-size: 300%;
-  	position: relative;
-  	text-align: center;*/
 }
 
 a{
@@ -68,6 +71,25 @@ a{
 	
 }
 
+#homeButton:hover{
+	color: #E64F51;
+}
+#graphicDesignButton:hover{
+	color: #E64F51;
+}
+#musicButton:hover{
+	color: #E64F51;
+}
+#resumeButton:hover{
+	color: #E64F51;
+}
+#profilesButton:hover{
+	color: #E64F51;
+}
+#contactButton:hover{
+	color: #E64F51
+}
+
 .dropDown{
 	display: inline-block;
 	position: relative;
@@ -93,8 +115,6 @@ a{
 	text-align: left;
 	display: block;
 	background-color: #2D2D2D;
-	left-padding: 8px;
-	right-padding: 20px;
 }
 
 
@@ -103,8 +123,8 @@ a{
 }
 
 .pageContents{
-	height: auto;
 	display: flex;
+	flex-direction: row;
 	z-index: 1;
 }
 
@@ -140,6 +160,11 @@ a{
 	width: 100%;
 	height: auto;
 	box-shadow: 9px 9px #FFFFFF;
+}
+
+.footer{
+	position: relative;
+	bottom: 10px;
 }
 
 address{
