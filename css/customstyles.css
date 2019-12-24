@@ -10,11 +10,19 @@ body{
 }
 
 header img{
-	width: 100%;
-	height: 
+	width: 60%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	/*font-size: 300%;
   	position: relative;
   	text-align: center;*/
+}
+
+a{
+	color: inherit;
+	text-decoration: inherit;
 }
 
 .pageTitle{
@@ -27,21 +35,15 @@ header img{
 
 .topNav{
 	background-color: #2D2D2D;
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	padding-left: 8px;
 	padding-right: 8px;
 	
-	float: none;
   	position: absolute;
   	left: 50%;
   	transform: translate(-50%);
-	overflow: hidden;
-}
-
-a{
-	color: inherit;
-	text-decoration: inherit;
+	z-index: 1;
 }
 
 .topNav a{
@@ -66,9 +68,44 @@ a{
 	
 }
 
+.dropDown{
+	display: inline-block;
+	position: relative;
+}
+
+.dropDownContents{
+	display: none;
+	position: absolute;
+	background-color: #1A1A1A;
+	z-index: 2;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.dropDownBox{
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.dropDownContents a{
+	text-align: left;
+	display: block;
+	background-color: #2D2D2D;
+	left-padding: 8px;
+	right-padding: 20px;
+}
+
+
+.dropDown:hover .dropDownContents{
+	display: block;
+}
+
 .pageContents{
 	height: auto;
 	display: flex;
+	z-index: 1;
 }
 
 .contentBox{
