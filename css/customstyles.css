@@ -13,6 +13,8 @@ body{
 	background-color: #1A1A1A;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	height: 100%;
+	display:flex;
+	flex-direction: column;
 }
 
 header img{
@@ -26,6 +28,10 @@ header img{
 a{
 	color: inherit;
 	text-decoration: inherit;
+}
+
+.content{
+	flex: 90%;
 }
 
 .pageTitle{
@@ -87,7 +93,23 @@ a{
 	color: #E64F51;
 }
 #contactButton:hover{
-	color: #E64F51
+	color: #E64F51;
+}
+
+#githubLink:hover{
+	color: #E64F51;
+}
+#linkedinLink:hover{
+	color: #E64F51;
+}
+#handshakeLink:hover{
+	color: #E64F51;
+}
+#spotifyLink:hover{
+	color: #E64F51;
+}
+#contactLink:hover{
+	color: #E64F51;
 }
 
 .dropDown{
@@ -163,12 +185,19 @@ a{
 }
 
 .footer{
+	flex: 10%;
 	position: relative;
-	bottom: 10px;
+	padding: 20px;
+}
+
+.footer img{
+	float: right;
+	width: 8%;
 }
 
 address{
 	text-align: center;
 	clear: left;
+	clear: right;
 }
 
