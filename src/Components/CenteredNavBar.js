@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom"
 
-export default function NavBar() {
-    return <nav>
-        <ul>
-            <Link to='/home'>Home</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/resume'>Resume</Link>
-        </ul>
+export default function CenteredNavBar() {
+    return <nav className="navbar">
+        <Link to='/home' className="nav-link">Home</Link>
+        <Link to='/about' className="nav-link">About</Link>
+        <Link to='/resume' className="nav-link">Resume</Link>
     </nav>
 }

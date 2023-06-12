@@ -3,5 +3,30 @@ body {
   font-family: Consolas;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: dimgray;
+  background-color: #1a191f;
+  color: #fafafe
+}
+
+.navbar {
+  color: #87878d;
+  background-color: #26252d;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+.nav-link {
+  padding: 5px;
+  color: #fafafe;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #87878d;
+}
+
+.page-content {
+  padding: 20px;
 }
