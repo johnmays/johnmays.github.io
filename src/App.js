@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import About from './Pages/About';
 import Home from './Pages/Home';
 import Resume from './Pages/Resume';
-import NavBar from './Components/NavBar';
+import NavBar from './Components/CenteredNavBar';
 
 class App extends React.Component{
   state = {};
