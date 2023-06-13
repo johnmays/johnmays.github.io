@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import About from './Pages/About';
 import Home from './Pages/Home';
 import Resume from './Pages/Resume';
+import DesignPortfolio from './Pages/DesignPortfolio';
 import CenteredNavBar from './Components/CenteredNavBar';
 
 class App extends React.Component{
@@ -17,6 +18,7 @@ class App extends React.Component{
           <Route path='/home' element = {<Home/>}/>
           <Route path='/about' element = {<About/>}/>
           <Route path='/resume' element = {<Resume/>}/>
+          <Route path='/designportfolio' element = {<DesignPortfolio/>}/>
         </Routes>
         </div>
       </div>

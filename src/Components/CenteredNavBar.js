@@ -5,5 +5,6 @@ export default function CenteredNavBar() {
         <Link to='/home' className="nav-link">Home</Link>
         <Link to='/about' className="nav-link">About</Link>
         <Link to='/resume' className="nav-link">Resume</Link>
+        <Link to='/designportfolio' className="nav-link">Design_Portfolio</Link>
     </nav>
 }
