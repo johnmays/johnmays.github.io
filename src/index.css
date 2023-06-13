@@ -30,3 +30,9 @@ body {
 .page-content {
   padding: 20px;
 }
+
+.pdf-box{
+  margin: auto;
+  width: 60%;
+  height: 100%;
+}
