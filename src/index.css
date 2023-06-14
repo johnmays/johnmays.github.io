@@ -1,14 +1,17 @@
+* {
+  font-family: Consolas;
+}
+
 body {
   margin: 0;
-  font-family: Consolas;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #1a191f;
   color: #fafafe
 }
 
-.navbar {
-  color: #87878d;
+.navbar, button{
+  color: #fafafe;
   background-color: #26252d;
   padding: 20px;
   margin: auto;
@@ -31,8 +34,15 @@ body {
   padding: 20px;
 }
 
-.pdf-box{
-  margin: auto;
-  width: 60%;
-  height: 100%;
+.pdf-box {
+  display: flex;
+}
+
+button {
+  border: 0;
+  margin: 10px;
+}
+
+button:hover {
+  color: #87878d;
 }
