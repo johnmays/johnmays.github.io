@@ -19,14 +19,14 @@ export default function Resume() {
     return(
         //renderTextLayer={false}
         <div>
-            <div className='pdf-box'>
+            <div className='pdf-window'>
                 <Document file="06_13_23_mays_resume.pdf" onLoadError={console.error}> 
                     <Page pageNumber={1}  devicePixelRatio={2.0}/>
                 </Document>
             </div>
-            <div>
+            <div className='button-box'>
                 <a href="/06_13_23_mays_resume.pdf" target="_blank" rel="noopener noreferrer">
-                    <button>Download</button>
+                        <button>Download</button>
                 </a>
             </div>
         </div>

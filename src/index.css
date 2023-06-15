@@ -34,8 +34,9 @@ body {
   padding: 20px;
 }
 
-.pdf-box {
+.pdf-window, .button-box {
   display: flex;
+  justify-content: space-around;
 }
 
 button {
