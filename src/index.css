@@ -21,13 +21,15 @@ body {
 }
 
 .nav-link {
-  padding: 5px;
+  padding: 10px;
+  border-radius: 6px;
   color: #fafafe;
   text-decoration: none;
+  transition: background-color 1s;
 }
 
 .nav-link:hover {
-  color: #87878d;
+  background-color: #87878d;
 }
 
 .page-content {
