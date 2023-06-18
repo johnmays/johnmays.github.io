@@ -46,7 +46,7 @@ body {
   position: absolute;
   opacity: 0;
   z-index: 2;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, left 0.5s, right 0.5s 0.1s;
 }
 
 .nav-link:hover ~ .hover-selector {
