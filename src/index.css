@@ -13,11 +13,15 @@ body {
 .navbar, button{
   color: #fafafe;
   background-color: #26252d;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: auto;
   text-align: center;
   width: fit-content;
   border-radius: 8px;
+  position: relative;
 }
 
 .nav-link {
@@ -25,12 +29,33 @@ body {
   border-radius: 6px;
   color: #fafafe;
   text-decoration: none;
-  transition: background-color 1s;
+  transition: background-color 0.7s;
+  z-index: 3;
+  position: relative;
+}
+/*.nav-link:hover {
+  background-color: #87878d;
+  transition: background-color 0.1s;
+}*/
+
+.hover-selector {
+  top: 10px;
+  bottom: 10px;
+  background-color: #87878d;
+  border-radius: 6px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  /*transition: opacity 0.3s, left 0.5s, right 0.5s;*/
 }
 
-.nav-link:hover {
-  background-color: #87878d;
+.nav-link:hover ~ .hover-selector {
+  opacity: 1;
 }
+
+/*.hover-selector:hover {
+  right: 20px;
+}*/
 
 .page-content {
   padding: 20px;
