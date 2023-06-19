@@ -20,5 +20,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# project-specific:
+# big files for working with images that I don't need on github:
 favicon.ai
+*.ai
+/working
+/image_editing
+
