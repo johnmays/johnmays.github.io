@@ -1,11 +1,20 @@
 import linkedin_logo from '../images/linkedin_logo.svg'
+import ProfileBox from '../Components/ProfileBox'
 
 export default function Profiles() {
     return(
-        <div>
-            <img src={linkedin_logo} alt='linkedin monograph logo'/>
+        <div className='profile-page'>
+            {ProfileBox(linkedin_logo, "GitHub", "boo")}
+            {ProfileBox(linkedin_logo, "LinkedIn", "boo")}
+            {ProfileBox(linkedin_logo, "Fiverr", "boo")}
         </div>
+        
     )
+    /*
+    <div>
+        <img src={linkedin_logo} alt='linkedin monograph logo'/>
+    </div>
+    */
     /*return(
         <div>
             <h1>Profiles</h1>

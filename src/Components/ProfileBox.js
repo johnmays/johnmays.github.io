@@ -1,9 +1,10 @@
 
 
-export default function ProfileBox(){
+export default function ProfileBox(siteLogo, siteTitle, altText){
     return(
-        <div>
-            foo
+        <div className="profile-box">
+            <img src={siteLogo} alt={altText}/>
+            <h3>{siteTitle}</h3>
         </div>
     )
 }
