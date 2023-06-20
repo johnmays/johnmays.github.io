@@ -1,7 +1,7 @@
 import LinkButton from '../Components/LinkButton';
 import { pdfjs, Document, Page } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
+//import 'react-pdf/dist/esm/Page/TextLayer.css';
 
 // importing PDFjs worker.
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -12,25 +12,21 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 export default function Resume() {
 
-    const handleClick = () => {
-
-    }
-
     return(
-        //renderTextLayer={false}
         <div>
             <div className='pdf-window'>
                 <Document file="06_13_23_mays_resume.pdf" onLoadError={console.error}> 
-                    <Page pageNumber={1}  devicePixelRatio={2.0}/>
+                    <Page pageNumber={1}  devicePixelRatio={2.0} renderTextLayer={false}/>
                 </Document>
-            </div>
-            <div className='button-box'>
-                <a href="/06_13_23_mays_resume.pdf" target="_blank" rel="noopener noreferrer">
-                        <button>Download</button>
-                </a>
             </div>
         </div>
     )
 }
 
-// <button href><a href="/06_13_23_mays_resume.pdf" download>Download</a></button>
+/*
+<div className='button-box'>
+                <a href="/06_13_23_mays_resume.pdf" target="_blank" rel="noopener noreferrer">
+                        <button>Download</button>
+                </a>
+            </div>
+*/

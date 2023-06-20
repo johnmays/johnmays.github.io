@@ -10,19 +10,28 @@ body {
   color: #fafafe
 }
 
-.navbar, button{
+.navbar, button {
   color: #fafafe;
   background-color: #26252d;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  left: 0;
+  right: 0;
   margin: auto;
   text-align: center;
   width: fit-content;
   border-radius: 8px;
-  position: relative;
+  position: fixed;
+  z-index: 2;
 }
+
+/*.spacer {
+  padding-top: 40px;
+  height: 1rem;
+  opacity: 0%;
+}*/
 
 .nav-link {
   padding: 10px;
@@ -30,13 +39,9 @@ body {
   color: #fafafe;
   text-decoration: none;
   transition: background-color 0.7s;
-  z-index: 3;
+  z-index: 4;
   position: relative;
 }
-/*.nav-link:hover {
-  background-color: #87878d;
-  transition: background-color 0.1s;
-}*/
 
 .hover-selector {
   top: 10px;
@@ -45,25 +50,22 @@ body {
   border-radius: 6px;
   position: absolute;
   opacity: 0;
-  z-index: 2;
-  /*transition: opacity 0.3s, left 0.5s, right 0.5s;*/
+  z-index: 3;
 }
 
 .nav-link:hover ~ .hover-selector {
   opacity: 1;
 }
 
-/*.hover-selector:hover {
-  right: 20px;
-}*/
-
 .page-content {
   padding: 20px;
+  z-index: 0;
 }
 
 .pdf-window, .button-box {
   display: flex;
   justify-content: space-around;
+  z-index: 1;
 }
 
 button {
