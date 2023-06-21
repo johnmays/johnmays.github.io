@@ -5,6 +5,8 @@ import Home from './Pages/Home';
 import Resume from './Pages/Resume';
 import DesignPortfolio from './Pages/DesignPortfolio';
 import Profiles from './Pages/Profiles';
+import WebsiteInformation from './Pages/WebsiteInformation';
+import NotFound from './Pages/NotFound';
 import CenteredNavBar from './Components/CenteredNavBar';
 
 class App extends React.Component{
@@ -21,6 +23,8 @@ class App extends React.Component{
           <Route path='/resume' element = {<Resume/>}/>
           <Route path='/designportfolio' element = {<DesignPortfolio/>}/>
           <Route path='/profiles' element = {<Profiles/>}/>
+          <Route path='/website_information' element = {<WebsiteInformation/>}/>
+          <Route path='*' exact={true} element={<NotFound/>} />
         </Routes>
         </div>
       </div>
