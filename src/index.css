@@ -94,12 +94,21 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  color: #fafafe;
+}
+
+.profile-logo {
+  fill: #fafafe;
 }
 
 .profile-box:hover > .profile-logo{
   fill: #87878d;
 }
 
-.profile-logo {
-  fill: #fafafe;
+.profile-box:hover h3{
+  color: #87878d;
+}
+
+a {
+  text-decoration: none;
 }
