@@ -1,5 +1,3 @@
-
-
 export default function ProfileBox(siteLogo, siteTitle, altText){
     return(
         <div className="profile-box">
