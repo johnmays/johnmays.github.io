@@ -90,12 +90,16 @@ button:hover {
   flex-direction: column;
 }
 
-.profile-box img {
-  margin: auto;
-}
-
 .profile-box h3{
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+}
+
+.profile-box:hover > .profile-logo{
+  fill: #87878d;
+}
+
+.profile-logo {
+  fill: #fafafe;
 }
