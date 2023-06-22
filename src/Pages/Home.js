@@ -1,4 +1,4 @@
-import face from '../images/john_photo.jpg'
+import face from '../assets/images/john_photo_2.jpg'
 
 export default function Home() {
     return(

@@ -1,4 +1,4 @@
-import guts from '../images/guts.jpg'
+import guts from '../assets/images/guts.jpg'
 
 export default function NotFound() {
     return(
