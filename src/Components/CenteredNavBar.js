@@ -1,7 +1,7 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function CenteredNavBar() {
+export default function CenteredNavBar(){
     const nav_ref = useRef(null);
     const link_ref_1 = useRef(null);
     const link_ref_2 = useRef(null);
@@ -15,8 +15,6 @@ export default function CenteredNavBar() {
     const [transitionStyle, setTransitionStyle] = useState("opacity 0.3s");
     const [firstDisplay, setFirstDisplay] = useState(true);
     const [prevLinkNumber, setPrevLinkNumber] = useState(0);
-
-
 
     useEffect(() => {
       function handleResize() {
@@ -65,7 +63,20 @@ export default function CenteredNavBar() {
     };
 
     function handleNavHover(){
+      //calling resetNavMeasurements here is a plan b approach to solve an issue where the dimensions of the navbar are set before the webfont finishes loading it.  Just a precaution.
+      resetNavMeasurements();
       setFirstDisplay(true);
+    }
+
+    function resetNavMeasurements(){
+      const x_1 = link_ref_1.current.offsetLeft;
+      const x_2 = link_ref_2.current.offsetLeft;
+      const x_3 = link_ref_3.current.offsetLeft;
+      const x_4 = link_ref_4.current.offsetLeft;
+      const x_5 = link_ref_5.current.offsetLeft;
+      const x_6 = link_ref_5.current.offsetLeft+link_ref_5.current.offsetWidth;
+      setNavBounds([x_1,x_2,x_3,x_4,x_5,x_6]);
+      console.log("foo")
     }
 
     return (

@@ -1,7 +1,13 @@
-* {
+/*@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');*/
+
+@font-face {
   font-family: 'Inconsolata';
+  src: local('Inconsolata'), url('./assets/fonts/inconsolata.woff') format('woff');
 }
-/* 'Inconsolata', */
+
+* {
+  font-family: Inconsolata, monospace;
+}
 
 body {
   margin: 0;
@@ -170,11 +176,12 @@ a {
 }
 
 .recommender-tab:hover {
-  transform: translateX(0);
+  transform: translateX(10px);
 }
 
 .recommender-tab p {
   padding: 10px;
+  margin-right: 10px;
 }
 
 .handle{
