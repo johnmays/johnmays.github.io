@@ -9,6 +9,7 @@ import WebsiteInformation from './Pages/WebsiteInformation';
 import NotFound from './Pages/NotFound';
 import SongRecommender from './Components/SongRecommender';
 import CenteredNavBar from './Components/CenteredNavBar';
+import Footer from './Components/Footer';
 
 class App extends React.Component{
   state = {};
@@ -28,6 +29,7 @@ class App extends React.Component{
             <Route path='*' exact={true} element={<NotFound/>} />
           </Routes>
         </div>
+        <Footer/>
         <SongRecommender/>
       </div>
     )

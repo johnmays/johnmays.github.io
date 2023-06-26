@@ -192,3 +192,10 @@ a {
   margin-right: 20px;
   background-color: #87878d;
 }
+
+.footer {
+  text-align: center;
+  margin: 10px;
+  bottom: 0px;
+  position: sticky;
+}
