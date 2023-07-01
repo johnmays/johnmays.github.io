@@ -17,6 +17,13 @@ body {
   color: #fafafe
 }
 
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
 .navbar, button {
   color: #fafafe;
   background-color: #26252d;
