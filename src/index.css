@@ -81,10 +81,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  margin: auto;
 }
 
-.pdf-window, .button-box {  
+.pdf-box img {
+  width: auto;
+  height: 65vh;
+}
+
+.button-box {  
   z-index: 1;
 }
 

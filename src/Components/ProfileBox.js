@@ -1,3 +1,4 @@
+import React from 'react'
 export default function ProfileBox({title, Logo, link}){
     return(
         <a href={link} target="_blank">

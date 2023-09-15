@@ -1,3 +1,4 @@
+import React from 'react'
 export default function smartGithubLogo (id, color='#fafafe', viewBox, data){
     /*<?xml version="1.0" encoding="UTF-8"?>*/
     return (

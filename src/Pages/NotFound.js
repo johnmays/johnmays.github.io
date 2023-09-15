@@ -1,3 +1,4 @@
+import React from 'react'
 import guts from '../assets/images/guts.jpg'
 
 export default function NotFound() {

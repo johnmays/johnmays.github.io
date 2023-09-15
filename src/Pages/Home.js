@@ -1,3 +1,4 @@
+import React from 'react'
 import face from '../assets/images/john_photo.jpg'
 
 export default function Home() {

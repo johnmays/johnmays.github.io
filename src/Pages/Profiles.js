@@ -1,6 +1,7 @@
 //import linkedin_logo from '../images/linkedin_logo.svg'
 //import github_logo from '../images/github_logo.svg'
 //import fiverr_logo from '../images/fiverr_logo.svg'
+import React from 'react'
 import { ReactComponent as GitHubLogo } from '../assets/images/smart_github_logo.svg'
 import { ReactComponent as FiverrLogo } from '../assets/images/smart_fiverr_logo.svg'
 import { ReactComponent as LinkedinLogo } from '../assets/images/smart_linkedin_logo.svg'
