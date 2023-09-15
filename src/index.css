@@ -25,7 +25,7 @@ body {
 }
 
 .navbar, button {
-  color: #bc955c;
+  color: #202720;
   background-color: #017dbb;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -76,19 +76,26 @@ body {
   z-index: 0;
 }
 
-.pdf-window, .button-box {
+.pdf-box {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.pdf-window, .button-box {  
   z-index: 1;
 }
 
 button {
   border: 0;
-  margin: 10px;
+  margin: auto;
+  margin-top: 20px;
 }
 
 button:hover {
-  color: #017dbb;
+  color: #bc955c;
 }
 
 .profile-page {
