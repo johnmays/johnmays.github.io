@@ -8,17 +8,8 @@ export default function Resume() {
             <div className='button-box'>
                 <a href="/09_15_23_mays_online_resume.pdf" target="_blank" rel="noopener noreferrer">
                     <button>Download</button>
-                        <button>Download</button>
                 </a>
             </div>
         </div>
     )
 }
-
-/*
-<div className='button-box'>
-                <a href="/06_13_23_mays_resume.pdf" target="_blank" rel="noopener noreferrer">
-                        <button>Download</button>
-                </a>
-            </div>
-*/
