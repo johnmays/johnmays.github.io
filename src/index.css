@@ -1,8 +1,8 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');*/
 
 @font-face {
   font-family: 'Inconsolata';
-  src: local('Inconsolata'), url('./assets/fonts/inconsolata.woff') format('woff');
+  src: local('Inconsolata'), url('./assets/fonts/Inconsolata-Medium.woff') format('woff');
 }
 
 * {
@@ -13,7 +13,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #202720;
+  background-color: #171b1c;
   color: #bc955c
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .navbar, button {
-  color: #202720;
+  color: #171b1c;
   background-color: #017dbb;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -50,7 +50,7 @@ body {
 .nav-link {
   padding: 10px;
   border-radius: 6px;
-  color: #202720;
+  color: #171b1c;
   text-decoration: none;
   transition: background-color 0.7s;
   z-index: 4;
@@ -182,7 +182,7 @@ a {
 
 .recommender-tab {
   position: fixed;
-  color: #202720;
+  color: #171b1c;
   background-color: #017dbb;
   border-radius: 8px;
   padding: 10px;
@@ -195,7 +195,7 @@ a {
 }
 
 .recommender-tab .text-link{
-  color: #202720;
+  color: #171b1c;
 }
 
 .recommender-tab .text-link:hover {
