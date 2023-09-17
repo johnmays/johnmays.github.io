@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c510db3.css",
-    "main.js": "/static/js/main.6332a154.js",
-    "static/media/john_photo.jpg": "/static/media/john_photo.aeb84e1cb459bd794f75.jpg",
-    "static/media/09_15_23_mays_online_resume.jpg": "/static/media/09_15_23_mays_online_resume.9590bd31c097090d1909.jpg",
+    "main.css": "/static/css/main.a50eb60a.css",
+    "main.js": "/static/js/main.a4254491.js",
+    "static/media/john_greece_fixed_cropped.png": "/static/media/john_greece_fixed_cropped.9b1ac48aa7587a8919c8.png",
+    "static/media/09_17_23_mays_online_resume.jpg": "/static/media/09_17_23_mays_online_resume.7782f98de757364798d7.jpg",
     "static/media/guts.jpg": "/static/media/guts.80f9e26660ea62e6922b.jpg",
     "static/media/Inconsolata-Regular.woff": "/static/media/Inconsolata-Regular.6b1d24a978e96f29baa7.woff",
     "static/media/smart_github_logo.svg": "/static/media/smart_github_logo.585a3de3be1500537d8ca11d99131b3b.svg",
     "static/media/smart_linkedin_logo.svg": "/static/media/smart_linkedin_logo.e1dcb3799ccc95522dca99cec7c37ad0.svg",
     "index.html": "/index.html",
     "static/media/smart_fiverr_logo.svg": "/static/media/smart_fiverr_logo.a9cb8a97c263dad09e000bcf8b14a573.svg",
-    "main.9c510db3.css.map": "/static/css/main.9c510db3.css.map",
-    "main.6332a154.js.map": "/static/js/main.6332a154.js.map"
+    "main.a50eb60a.css.map": "/static/css/main.a50eb60a.css.map",
+    "main.a4254491.js.map": "/static/js/main.a4254491.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c510db3.css",
-    "static/js/main.6332a154.js"
+    "static/css/main.a50eb60a.css",
+    "static/js/main.a4254491.js"
   ]
 }
