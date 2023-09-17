@@ -4,7 +4,9 @@ export default function Resume() {
 
     return(
         <div className='pdf-box'>
-            <img src={resume_image} alt="An image of my resume.  Text can be extracted by actually downloading it as a pdf with the button below."></img>
+            <a href="/09_15_23_mays_online_resume.pdf" target="_blank" rel="noopener noreferrer">
+                <img src={resume_image} alt="My resume.  Text can be extracted by actually downloading it as a pdf with the button below."></img>
+            </a>
             <div className='button-box'>
                 <a href="/09_15_23_mays_online_resume.pdf" target="_blank" rel="noopener noreferrer">
                     <button>Download</button>
