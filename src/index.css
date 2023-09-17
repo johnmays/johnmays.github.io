@@ -97,6 +97,7 @@ button {
   border: 0;
   margin: auto;
   margin-top: 20px;
+  font-size: medium;
 }
 
 button:hover {
