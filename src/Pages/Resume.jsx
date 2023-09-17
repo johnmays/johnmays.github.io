@@ -3,15 +3,13 @@ import resume_image from '../assets/images/09_15_23_mays_online_resume.jpg'
 export default function Resume() {
 
     return(
-        <div className='pdf-box'>
+        <div className='resume-content'>
             <a href="/09_15_23_mays_online_resume.pdf" target="_blank" rel="noopener noreferrer">
                 <img src={resume_image} alt="My resume.  Text can be extracted by actually downloading it as a pdf with the button below."></img>
             </a>
-            <div className='button-box'>
-                <a href="/09_15_23_mays_online_resume.pdf" target="_blank" rel="noopener noreferrer">
-                    <button>Download</button>
-                </a>
-            </div>
+            <a href="/09_15_23_mays_online_resume.pdf" target="_blank" rel="noopener noreferrer">
+                <button>Download</button>
+            </a>
         </div>
     )
 }

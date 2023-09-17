@@ -17,125 +17,19 @@ body {
   color: #bc955c
 }
 
-.app{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.app{/* container for everything on page including navbar and footer */
+  position: relative;
   min-height: 100vh;
 }
 
-.navbar, button {
-  color: #171b1c;
-  background-color: #017dbb;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  width: fit-content;
-  border-radius: 8px;
-  position: fixed;
-  z-index: 2;
-}
-
-/*.spacer {
-  padding-top: 40px;
-  height: 1rem;
-  opacity: 0%;
-}*/
-
-.nav-link {
-  padding: 10px;
-  border-radius: 6px;
-  color: #171b1c;
-  text-decoration: none;
-  transition: background-color 0.7s;
-  z-index: 4;
-  position: relative;
-}
-
-.hover-selector {
-  top: 10px;
-  bottom: 10px;
-  background-color: #bc955c;
-  border-radius: 6px;
-  position: absolute;
-  opacity: 0;
-  z-index: 3;
-}
-
-.nav-link:hover ~ .hover-selector {
-  opacity: 1;
-}
-
-.page-content {
+.page-content {/* container for everything besides navbar and footer */
   padding: 20px;
   z-index: 0;
+  position: relative;
+  padding: 3rem;
 }
 
-.pdf-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-.pdf-box img {
-  width: auto;
-  height: 65vh;
-}
-
-.button-box {  
-  z-index: 1;
-}
-
-button {
-  border: 0;
-  margin: auto;
-  margin-top: 20px;
-  font-size: medium;
-}
-
-button:hover {
-  color: #bc955c;
-  cursor:pointer;
-}
-
-.profile-page {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.profile-box {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-}
-
-.profile-box h3{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  color: #bc955c;
-}
-
-.profile-logo {
-  fill: #bc955c;
-}
-
-.profile-box:hover > .profile-logo{
-  fill: #017dbb;
-}
-
-.profile-box:hover h3{
-  color: #017dbb;
-}
+/* GENERAL PAGE CONTENT: */
 
 .content-box{
   display: flex;
@@ -169,10 +63,6 @@ a {
   width: 300px;
 }
 
-.not-found-box img {
-  width: 300px;
-}
-
 .text-link {
   text-decoration: underline;
   color: #bc955c;
@@ -181,6 +71,123 @@ a {
 .text-link:hover {
   color: #017dbb;
 }
+
+/* NAVBAR: */
+
+.navbar, button {
+  color: #171b1c;
+  background-color: #017dbb;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.navbar{
+  position: fixed;
+}
+
+.nav-link {
+  padding: 10px;
+  border-radius: 6px;
+  color: #171b1c;
+  text-decoration: none;
+  transition: background-color 0.7s;
+  z-index: 4;
+  position: relative;
+}
+
+.hover-selector {
+  top: 10px;
+  bottom: 10px;
+  background-color: #bc955c;
+  border-radius: 6px;
+  position: absolute;
+  opacity: 0;
+  z-index: 3;
+}
+
+.nav-link:hover ~ .hover-selector {
+  opacity: 1;
+}
+
+/* RESUME DISPLAY: */
+
+.resume-content {/* containter for resume image + download button */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.resume-content img {
+  width: auto;
+  height: 65vh;
+}
+
+/* BUTTONS: */
+
+button {
+  border: 0;
+  margin: auto;
+  margin-top: 20px;
+  font-size: medium;
+}
+
+button:hover {
+  color: #bc955c;
+  cursor:pointer;
+}
+
+/* PROFILE PAGE: */
+
+.profile-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.profile-box {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-box h3{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  color: #bc955c;
+}
+
+.profile-logo {
+  fill: #bc955c;
+}
+
+.profile-box:hover > .profile-logo{
+  fill: #017dbb;
+}
+
+.profile-box:hover h3{
+  color: #017dbb;
+}
+
+/* NOTFOUND/404: */
+
+.not-found-box img {
+  width: 300px;
+}
+
+/* RECOMMENDER TAB: */
 
 .recommender-tab {
   position: fixed;
@@ -222,9 +229,13 @@ a {
   background-color: #bc955c;
 }
 
+/* FOOTER: */
+
 .footer {
   text-align: center;
-  margin: 10px;
-  bottom: 0px;
-  position: sticky;
+  margin-top: 20px;
+  bottom: 10px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
