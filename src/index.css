@@ -91,6 +91,7 @@ a {
 }
 
 .navbar{
+  margin-top: 10px;
   position: fixed;
 }
 
