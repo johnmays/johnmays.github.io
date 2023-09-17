@@ -1,5 +1,5 @@
 import React from 'react'
-import face from '../assets/images/john_photo.jpg'
+import face from '../assets/images/john_greece_fixed_cropped.png'
 
 export default function Home() {
     return(

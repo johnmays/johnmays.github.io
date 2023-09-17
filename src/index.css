@@ -42,12 +42,12 @@ body {
 
 .content-box p{
   margin-top: 20px;
-  width: 50vw;
+  width: 50%;
   display: inline-block;
   text-align: left;
 }
 
-.summary-box p{
+.summary-box p{ /* Basically only to do centering on home page */
   text-align: center;
 }
 
@@ -60,7 +60,7 @@ a {
 }
 
 .summary-box img{
-  width: 300px;
+  width: 45vh;
 }
 
 .text-link {
@@ -158,7 +158,7 @@ button:hover {
 }
 
 .profile-box {
-  width: 300px;
+  width: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -239,4 +239,69 @@ button:hover {
   position: absolute;
   width: 100%;
   z-index: 1;
+}
+
+/* MOBILE RESPONSIVENESS: PAGE CONTENT: */
+
+/* MOBILE RESPONSIVENESS: NAVBAR: */
+
+@media (max-width: 1024px) {
+
+  .summary-box img{
+    width: 65%;
+  }
+
+  .content-box p{
+    width: 65%;
+  }
+
+  .resume-content img {
+    width: 85vw;
+    height: auto;
+  }
+
+  .profile-box {
+    width: 300px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .hover-selector {
+    display: none;
+  }
+
+  .recommender-tab {
+    display: none;
+  }
+
+  .summary-box img{
+    width: 75%;
+  }
+
+  .content-box p{
+    width: 75%;
+  }
+
+  .profile-box {
+    width: 225px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .summary-box img{
+    width: 90%;
+  }
+
+  .content-box p{
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 412px) {
+  .profile-box {
+    width: 200px;
+  }
 }
