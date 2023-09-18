@@ -22,7 +22,7 @@ export default function SongRecommender(){
         <div className="recommender-tab" onMouseEnter={()=> handleHover()}>
             <div className="handle"></div>
             <>
-                <p>Want a song recommendation?<br/><a href={songURL} target="blank" className="text-link">Click here</a>.</p>
+                <p>Want a song recommendation?<br/><a href={songURL} target="_blank" className="text-link">Click here</a>.</p>
             </>
         </div>
     )
