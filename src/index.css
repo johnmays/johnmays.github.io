@@ -142,14 +142,25 @@ a {
   position: relative;
 }
 
+.hover-selector, .page-selector {
+  background-color: #bc955c;
+  position: absolute;
+  z-index: 3;
+}
+
 .hover-selector {
+  border-radius: 6px;
   top: 10px;
   bottom: 10px;
-  background-color: #bc955c;
-  border-radius: 6px;
-  position: absolute;
   opacity: 0;
-  z-index: 3;
+}
+
+.page-selector {
+  border-radius: 2px;
+  bottom: -2px;
+  height: 4px;
+  width: 61px;
+  left: 10px;
 }
 
 .nav-link:hover ~ .hover-selector {

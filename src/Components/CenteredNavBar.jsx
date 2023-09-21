@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRef, useState, useEffect, useLayoutEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function CenteredNavBar(){
     const nav_ref = useRef(null);
@@ -8,10 +8,13 @@ export default function CenteredNavBar(){
     const link_ref_2 = useRef(null);
     const link_ref_3 = useRef(null);
     const link_ref_4 = useRef(null);
+    
+    const location = useLocation();
 
     const [navHeight, setNavHeight] = useState(0)
     const [navBounds, setNavBounds] = useState([0,0,0,0,0,0]);
-    const [selectorBounds, setSelectorBounds] = useState([0,0]);
+    const [hoverSelectorBounds, sethoverSelectorBounds] = useState([0,0]);
+    //const [pageSelectorBounds, pageSelectorBounds] = useState([0,0]);
     const [transitionStyle, setTransitionStyle] = useState("opacity 0.3s");
     const [firstDisplay, setFirstDisplay] = useState(true);
     const [prevLinkNumber, setPrevLinkNumber] = useState(0);
@@ -35,13 +38,13 @@ export default function CenteredNavBar(){
 
     function handleLinkHover(linkNumber) {
       if (linkNumber === 1){
-        setSelectorBounds([navBounds[0],navBounds[4]-navBounds[1]]);
+        sethoverSelectorBounds([navBounds[0],navBounds[4]-navBounds[1]]);
       }else if (linkNumber === 2){
-        setSelectorBounds([navBounds[1],navBounds[4]-navBounds[2]]);
+        sethoverSelectorBounds([navBounds[1],navBounds[4]-navBounds[2]]);
       }else if (linkNumber === 3){
-        setSelectorBounds([navBounds[2],navBounds[4]-navBounds[3]]);
+        sethoverSelectorBounds([navBounds[2],navBounds[4]-navBounds[3]]);
       }else if (linkNumber === 4){
-        setSelectorBounds([navBounds[3],0]);
+        sethoverSelectorBounds([navBounds[3],0]);
       }else{
         console.log("Invalid link number passed...");
       }
@@ -82,7 +85,8 @@ export default function CenteredNavBar(){
             <Link to='/about' className="nav-link" ref={link_ref_2} onMouseEnter={() => handleLinkHover(2)}>About</Link>
             <Link to='/resume' className="nav-link" ref={link_ref_3} onMouseEnter={() => handleLinkHover(3)}>Resume</Link>
             <Link to='/profiles' className="nav-link" ref={link_ref_4} onMouseEnter={() => handleLinkHover(4)}>Profiles</Link>
-            <div className="hover-selector" style={{left: `${selectorBounds[0]}px`, right: `${10+selectorBounds[1]}px`, transition: `${transitionStyle}`}}></div>
+            <div className="hover-selector" style={{left: `${hoverSelectorBounds[0]}px`, right: `${10+hoverSelectorBounds[1]}px`, transition: `${transitionStyle}`}}></div>
+            <div className="page-selector"></div>
         </nav>
         <div className="spacer" style={{height: `${navHeight}px`}}></div>
       </div>
