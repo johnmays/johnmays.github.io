@@ -8,8 +8,7 @@ export default function SongRecommender(){
     const [songURL, setSongURL] = useState("");
 
     function filterByID(jsonObject, id) {
-        return jsonObject.filter(jsonObject => jsonObject["id"] == id)[0];
-        return "https://www.youtube.com/watch?v=aJgAwjP20RY&ab_channel=WebStylePress";
+        return jsonObject.filter(jsonObject => jsonObject["id"] === id)[0];
     }
 
     function handleHover(){
@@ -22,7 +21,7 @@ export default function SongRecommender(){
         <div className="recommender-tab" onMouseEnter={()=> handleHover()}>
             <div className="handle"></div>
             <>
-                <p>Want a song recommendation?<br/><a href={songURL} target="_blank" className="text-link">Click here</a>.</p>
+                <p>Want a song recommendation?<br/><a href={songURL} target="_blank" rel="noreferrer" className="text-link">Click here</a>.</p>
             </>
         </div>
     )

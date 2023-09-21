@@ -6,7 +6,7 @@ export default function Home() {
         <div className="content-box summary-box">
             <h1>John Mays</h1>
             <p>I dig computers & design. I'm also a recent college graduate.</p>
-            <img src={face} alt="a blurry photo of John Mays in front of a parking garage at night in Cleveland Ohio"></img>
+            <img src={face} alt="a portrait of John Mays standing on a beach in Lesvos"></img>
         </div>
     )
 }

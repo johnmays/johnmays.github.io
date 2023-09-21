@@ -5,7 +5,7 @@ export default function About() {
     const currentYear = today.getFullYear();
     const currentMonth = today.getMonth()+1;
     const currentDay = today.getDate();
-    const pastBirthday = (currentMonth == 3) && (currentDay >=4) || (currentMonth > 3);
+    const pastBirthday = ((currentMonth === 3) && (currentDay >=4)) || (currentMonth > 3);
     const age = currentYear - 2002 + pastBirthday;
 
     return(
