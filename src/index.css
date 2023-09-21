@@ -163,6 +163,8 @@ button:hover {
 
 .profile-box {
   width: 350px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .profile-box h3{
