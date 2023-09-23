@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.77890520.css",
-    "main.js": "/static/js/main.bb15f6d3.js",
+    "main.css": "/static/css/main.33d2f5dc.css",
+    "main.js": "/static/js/main.95a4bb3c.js",
     "static/media/09_17_23_mays_online_resume.jpg": "/static/media/09_17_23_mays_online_resume.5c3134b8aa67891fd4fa.jpg",
     "static/media/john_greece_fixed_cropped.jpg": "/static/media/john_greece_fixed_cropped.a1655542b3e3b9e885ad.jpg",
     "static/media/guts.jpg": "/static/media/guts.80f9e26660ea62e6922b.jpg",
@@ -9,11 +9,11 @@
     "static/media/smart_linkedin_logo.svg": "/static/media/smart_linkedin_logo.e1dcb3799ccc95522dca99cec7c37ad0.svg",
     "index.html": "/index.html",
     "static/media/smart_fiverr_logo.svg": "/static/media/smart_fiverr_logo.a9cb8a97c263dad09e000bcf8b14a573.svg",
-    "main.77890520.css.map": "/static/css/main.77890520.css.map",
-    "main.bb15f6d3.js.map": "/static/js/main.bb15f6d3.js.map"
+    "main.33d2f5dc.css.map": "/static/css/main.33d2f5dc.css.map",
+    "main.95a4bb3c.js.map": "/static/js/main.95a4bb3c.js.map"
   },
   "entrypoints": [
-    "static/css/main.77890520.css",
-    "static/js/main.bb15f6d3.js"
+    "static/css/main.33d2f5dc.css",
+    "static/js/main.95a4bb3c.js"
   ]
 }
