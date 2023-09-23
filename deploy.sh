@@ -14,6 +14,12 @@ if [ "$branch" = "y" ] || [ "$branch" = "Y" ]; then
         git checkout deploy
         # copy files from the build folder into the root dir (on deploy branch)
         cp -a /build/. .
+        # deploy:
+        git add .
+        echo -n "Please add a commit message for deployment"
+        read commitmessage
+        eval "git commit -m '$commitmessage'"
+        git push
     else
         echo "Make sure main us up to date with the remote before you deploy."
     fi
